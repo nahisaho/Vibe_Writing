@@ -1,0 +1,65 @@
+<footer class="license-footer">
+  <hr>
+  <div class="license-info">
+    <h3>ライセンス</h3>
+    <p>
+      このドキュメントは、
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ja" target="_blank" rel="noopener">
+        Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+      </a> 
+      ライセンスの下で公開されています。
+    </p>
+    
+    <div class="license-badge">
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ja" target="_blank" rel="noopener">
+        <img src="https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png" alt="CC BY-NC-SA 4.0" />
+      </a>
+    </div>
+    
+    <ul class="license-terms">
+      <li><strong>商用利用禁止</strong>: このドキュメントを営利目的で使用することはできません</li>
+      <li><strong>表示</strong>: 適切なクレジットを表示し、ライセンスへのリンクを提供する必要があります</li>
+      <li><strong>継承</strong>: 改変した場合は、同じライセンスで配布する必要があります</li>
+    </ul>
+    
+    <p class="copyright">
+      © {{ site.time | date: '%Y' }} {{ site.author.name | default: 'Vibe Writing Project' }} | 
+      詳細は <a href="{{ '/LICENSE.md' | relative_url }}">LICENSE.md</a> をご覧ください。
+    </p>
+  </div>
+</footer>
+
+<style>
+.license-footer {
+  margin-top: 2rem;
+  padding: 1rem 0;
+  border-top: 1px solid #eee;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.license-info h3 {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.license-badge {
+  margin: 1rem 0;
+}
+
+.license-terms {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.license-terms li {
+  margin: 0.25rem 0;
+}
+
+.copyright {
+  font-size: 0.85em;
+  margin-top: 1rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #f0f0f0;
+}
+</style>

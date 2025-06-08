@@ -1,0 +1,106 @@
+# Site settings
+title: "Vibe Writing"
+description: "忙しい技術者のための革新的文書作成フレームワーク"
+baseurl: ""
+url: "https://yourusername.github.io"
+
+# Navigation
+navigation:
+  - title: "目次"
+    url: "/table-of-contents"
+  - title: "クイックスタート"
+    url: "/quick-start-guide"
+  - title: "実践ガイド"
+    url: "/chapter-04-six-step-process"
+  - title: "GitHub連携"
+    url: "/chapter-05-github-pages-integration"
+
+# Author information
+author:
+  name: "Vibe Writing Project"
+  email: "noreply@example.com"
+
+# Copyright and License
+copyright: "© 2024 Vibe Writing Project"
+license:
+  name: "CC BY-NC-SA 4.0"
+  url: "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ja"
+  description: "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International"
+  commercial_use: false
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Plugin settings
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-titles-from-headings
+
+# Plugin configurations
+optional_front_matter:
+  remove_originals: true
+
+readme_index:
+  enabled: true
+  remove_originals: false
+  with_frontmatter: false
+
+titles_from_headings:
+  enabled: true
+  strip_title: true
+  collections: true
+
+relative_links:
+  enabled: true
+  collections: true
+
+# SEO settings
+twitter:
+  username: vibewriting
+  card: summary_large_image
+
+facebook:
+  app_id: 
+  publisher: 
+
+logo: /assets/images/logo.png
+
+social:
+  name: Vibe Writing Project
+  links:
+    - https://github.com/yourusername/vibe-writing
+
+# Jekyll SEO tag settings
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "default"
+      author: "Vibe Writing Project"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      author: "Vibe Writing Project"
+
+# Exclude files from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - README.md
+  - LICENSE.md
