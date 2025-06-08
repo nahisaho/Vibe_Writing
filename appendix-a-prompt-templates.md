@@ -39,7 +39,7 @@ tags: [templates, prompt-engineering, implementation-tools, detailed-guide]
 **期待効果：** 明確な方向性と実装可能な文書構成の獲得
 
 ```
-# Vibe Writing戦略設計依頼
+# Vibe Writing 戦略設計依頼
 
 ## 基本情報
 **対象組織：** [小中学校/大学/企業 - 具体的な組織名]
@@ -53,7 +53,7 @@ tags: [templates, prompt-engineering, implementation-tools, detailed-guide]
 **組織的制約：** [承認プロセス、法規制、業界標準]
 **予算的制約：** [利用可能なリソース、投資限度]
 
-## VIBE設定
+## VIBE 設定
 **Value（価値）：** この文書により読者が得られる具体的な価値
 **Intent（意図）：** 文書作成者の明確な目的・狙い
 **Balance（バランス）：** 技術性と理解しやすさの最適な調和点
@@ -82,7 +82,7 @@ tags: [templates, prompt-engineering, implementation-tools, detailed-guide]
 **特徴：** 技術的正確性と実用性のバランスを重視
 
 ```
-# 技術文書設計 - Vibe Writing戦略依頼
+# 技術文書設計 - Vibe Writing 戦略依頼
 
 ## 技術的基本情報
 **対象システム/技術：** [具体的なシステム名、バージョン、環境]
@@ -120,7 +120,7 @@ tags: [templates, prompt-engineering, implementation-tools, detailed-guide]
 - 最新情報との整合性
 - 実環境での検証済み
 
-## VIBE技術特化設定
+## VIBE 技術特化設定
 **Value：** [業務効率向上/セキュリティ強化/コスト削減/など具体的価値]
 **Intent：** [問題解決/知識伝達/標準化/など明確な意図]
 **Balance：** [技術詳細レベルと実用性のバランス調整]
@@ -142,7 +142,7 @@ tags: [templates, prompt-engineering, implementation-tools, detailed-guide]
 #### A3-1. 小中学校特化テンプレート
 
 ```
-# 小中学校向け文書設計 - Vibe Writing戦略依頼
+# 小中学校向け文書設計 - Vibe Writing 戦略依頼
 
 ## 教育機関特有要件
 **学校種別：** [小学校/中学校/小中一貫校]
@@ -185,7 +185,7 @@ tags: [templates, prompt-engineering, implementation-tools, detailed-guide]
 #### A3-2. 大学特化テンプレート
 
 ```
-# 大学向け文書設計 - Vibe Writing戦略依頼
+# 大学向け文書設計 - Vibe Writing 戦略依頼
 
 ## 大学機関特有要件
 **大学種別：** [国立/公立/私立]
@@ -228,7 +228,7 @@ tags: [templates, prompt-engineering, implementation-tools, detailed-guide]
 #### A3-3. 企業特化テンプレート
 
 ```
-# 企業向け文書設計 - Vibe Writing戦略依頼
+# 企業向け文書設計 - Vibe Writing 戦略依頼
 
 ## 企業特有要件
 **企業規模：** [中小企業(～300名)/中堅企業(300-1000名)/大企業(1000名～)]
