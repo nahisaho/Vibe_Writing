@@ -236,39 +236,39 @@ layout: default
             {% raw %}{% if page.author %} • {{ page.author }}{% endif %}{% endraw %}
         </div>
         
-        {% if page.tags.size > 0 %}
+        {% raw %}{% if page.tags.size > 0 %}{% endraw %}
         <div class="post-tags">
-            {% for tag in page.tags %}
-                <span class="tag">{{ tag }}</span>
-            {% endfor %}
+            {% raw %}{% for tag in page.tags %}{% endraw %}
+                <span class="tag">{% raw %}{{ tag }}{% endraw %}</span>
+            {% raw %}{% endfor %}{% endraw %}
         </div>
-        {% endif %}
+        {% raw %}{% endif %}{% endraw %}
     </header>
     
-    {% if page.toc %}
+    {% raw %}{% if page.toc %}{% endraw %}
     <nav class="toc">
         <h2>目次</h2>
-        {% toc %}
+        {% raw %}{% toc %}{% endraw %}
     </nav>
-    {% endif %}
+    {% raw %}{% endif %}{% endraw %}
     
     <div class="post-content">
-        {{ content }}
+        {% raw %}{{ content }}{% endraw %}
     </div>
     
     <footer class="post-footer">
         <div class="post-navigation">
-            {% if page.previous %}
-                <a href="{{ page.previous.url | relative_url }}" class="prev-post">
-                    ← {{ page.previous.title }}
+            {% raw %}{% if page.previous %}{% endraw %}
+                <a href="{% raw %}{{ page.previous.url | relative_url }}{% endraw %}" class="prev-post">
+                    ← {% raw %}{{ page.previous.title }}{% endraw %}
                 </a>
-            {% endif %}
+            {% raw %}{% endif %}{% endraw %}
             
-            {% if page.next %}
-                <a href="{{ page.next.url | relative_url }}" class="next-post">
-                    {{ page.next.title }} →
+            {% raw %}{% if page.next %}{% endraw %}
+                <a href="{% raw %}{{ page.next.url | relative_url }}{% endraw %}" class="next-post">
+                    {% raw %}{{ page.next.title }}{% endraw %} →
                 </a>
-            {% endif %}
+            {% raw %}{% endif %}{% endraw %}
         </div>
     </footer>
 </article>
