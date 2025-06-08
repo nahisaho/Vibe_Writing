@@ -196,27 +196,27 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
     <title>{% raw %}{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}{% endraw %}</title>
     <meta name="description" content="{% raw %}{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}{% endraw %}">
     
-    {% seo %}
-    {% feed_meta %}
+    {% raw %}{% seo %}{% endraw %}
+    {% raw %}{% feed_meta %}{% endraw %}
     
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <link rel="stylesheet" href="{% raw %}{{ '/assets/css/main.css' | relative_url }}{% endraw %}">
     
     <!-- 検索機能（Algolia） -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7/themes/algolia-min.css">
 </head>
 <body>
-    {% include header.html %}
+    {% raw %}{% include header.html %}{% endraw %}
     
     <main>
-        {{ content }}
+        {% raw %}{{ content }}{% endraw %}
     </main>
     
-    {% include footer.html %}
+    {% raw %}{% include footer.html %}{% endraw %}
     
     <!-- 検索機能JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4"></script>
-    <script src="{{ '/assets/js/search.js' | relative_url }}"></script>
+    <script src="{% raw %}{{ '/assets/js/search.js' | relative_url }}{% endraw %}"></script>
 </body>
 </html>
 ```
@@ -230,10 +230,10 @@ layout: default
 
 <article class="post">
     <header class="post-header">
-        <h1 class="post-title">{{ page.title }}</h1>
+        <h1 class="post-title">{% raw %}{{ page.title }}{% endraw %}</h1>
         <div class="post-meta">
-            <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y年%m月%d日" }}</time>
-            {% if page.author %} • {{ page.author }}{% endif %}
+            <time datetime="{% raw %}{{ page.date | date_to_xmlschema }}{% endraw %}">{% raw %}{{ page.date | date: "%Y年%m月%d日" }}{% endraw %}</time>
+            {% raw %}{% if page.author %} • {{ page.author }}{% endif %}{% endraw %}
         </div>
         
         {% if page.tags.size > 0 %}
