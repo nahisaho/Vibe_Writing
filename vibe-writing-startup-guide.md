@@ -38,7 +38,7 @@ tags: [getting-started, project-knowledge, claude-sonnet, claude-code, step-by-s
 vibe-writing-definition.mdは以下のGitHubリポジトリから取得できます：
 
 ```
-GitHubリポジトリ: https://github.com/your-organization/vibe-writing-resources
+GitHubリポジトリ: https://github.com/nahisaho/Vibe_Writing/
 ファイルパス: /vibe-writing-definition.md
 
 取得手順：
