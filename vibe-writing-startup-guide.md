@@ -39,7 +39,7 @@ vibe-writing-definition.mdは以下のGitHubリポジトリから取得できま
 
 ```
 GitHubリポジトリ: https://github.com/your-organization/vibe-writing-resources
-ファイルパス: /definitions/vibe-writing-definition.md
+ファイルパス: /vibe-writing-definition.md
 
 取得手順：
 1. 上記GitHubリポジトリにアクセス
