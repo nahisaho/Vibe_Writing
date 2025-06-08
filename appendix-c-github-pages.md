@@ -246,28 +246,13 @@ layout: default
     </div>
     
     <nav class="chapter-navigation">
-        {% assign chapters = site.chapters | sort: 'order' %}
-        {% for chapter in chapters %}
-            {% if chapter.url == page.url %}
-                {% assign current_index = forloop.index0 %}
-                {% break %}
-            {% endif %}
-        {% endfor %}
-        
         <div class="nav-links">
-            {% if current_index > 0 %}
-                {% assign prev_chapter = chapters[current_index - 1] %}
-                <a href="{{ prev_chapter.url | relative_url }}" class="nav-link prev">
-                    ← {{ prev_chapter.title }}
-                </a>
-            {% endif %}
-            
-            {% if current_index < chapters.size - 1 %}
-                {% assign next_chapter = chapters[current_index + 1] %}
-                <a href="{{ next_chapter.url | relative_url }}" class="nav-link next">
-                    {{ next_chapter.title }} →
-                </a>
-            {% endif %}
+            <a href="/" class="nav-link home">
+                ← ホームに戻る
+            </a>
+            <a href="/table-of-contents" class="nav-link toc">
+                目次を見る →
+            </a>
         </div>
     </nav>
 </article>
