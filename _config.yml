@@ -1,19 +1,19 @@
 # Site settings
 title: "Vibe Writing"
 description: "忙しい技術者のための革新的文書作成フレームワーク"
-baseurl: ""
-url: "https://yourusername.github.io"
+baseurl: "/Vibe_Writing"
+url: "https://nahisaho.github.io"
 
 # Navigation
 navigation:
   - title: "目次"
-    url: "/table-of-contents"
+    url: "./table-of-contents"
   - title: "クイックスタート"
-    url: "/quick-start-guide"
+    url: "./quick-start-guide"
   - title: "実践ガイド"
-    url: "/chapter-04-six-step-process"
+    url: "./chapter-04-six-step-process"
   - title: "GitHub連携"
-    url: "/chapter-05-github-pages-integration"
+    url: "./chapter-05-github-pages-integration"
 
 # Author information
 author:
