@@ -7,13 +7,13 @@ url: "https://nahisaho.github.io"
 # Navigation
 navigation:
   - title: "目次"
-    url: "./table-of-contents"
+    url: "./table-of-contents.md"
   - title: "クイックスタート"
-    url: "./quick-start-guide"
+    url: "./quick-start-guide.md"
   - title: "実践ガイド"
-    url: "./chapter-04-six-step-process"
+    url: "./chapter-04-six-step-process.md"
   - title: "GitHub連携"
-    url: "./chapter-05-github-pages-integration"
+    url: "./chapter-05-github-pages-integration.md"
 
 # Author information
 author:
