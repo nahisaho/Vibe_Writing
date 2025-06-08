@@ -343,15 +343,15 @@ var idx = lunr(function () {
 **Google Analytics設定：**
 ```html
 <!-- _includes/analytics.html -->
-{% if site.google_analytics %}
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+{% raw %}{% if site.google_analytics %}{% endraw %}
+<script async src="https://www.googletagmanager.com/gtag/js?id={% raw %}{{ site.google_analytics }}{% endraw %}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', '{{ site.google_analytics }}');
+  gtag('config', '{% raw %}{{ site.google_analytics }}{% endraw %}');
 </script>
-{% endif %}
+{% raw %}{% endif %}{% endraw %}
 ```
 
 **利用状況の分析：**

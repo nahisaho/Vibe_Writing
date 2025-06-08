@@ -193,8 +193,8 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-    <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+    <title>{% raw %}{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}{% endraw %}</title>
+    <meta name="description" content="{% raw %}{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}{% endraw %}">
     
     {% seo %}
     {% feed_meta %}
@@ -406,12 +406,12 @@ author: "作成者名"
 
 ```javascript
 const searchClient = algoliasearch(
-  '{{ site.algolia.application_id }}',
-  '{{ site.algolia.search_only_api_key }}'
+  '{% raw %}{{ site.algolia.application_id }}{% endraw %}',
+  '{% raw %}{{ site.algolia.search_only_api_key }}{% endraw %}'
 );
 
 const search = instantsearch({
-  indexName: '{{ site.algolia.index_name }}',
+  indexName: '{% raw %}{{ site.algolia.index_name }}{% endraw %}',
   searchClient,
 });
 

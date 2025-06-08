@@ -154,9 +154,9 @@ EOF
 # 3. SEO最適化用のincludeファイル
 cat > _includes/seo-head.html << 'EOF'
 <!-- SEO最適化メタタグ -->
-<meta name="description" content="{{ page.description | default: site.description }}">
-<meta name="keywords" content="{{ page.keywords }}">
-<meta name="author" content="{{ page.author | default: site.author }}">
+<meta name="description" content="{% raw %}{{ page.description | default: site.description }}{% endraw %}">
+<meta name="keywords" content="{% raw %}{{ page.keywords }}{% endraw %}">
+<meta name="author" content="{% raw %}{{ page.author | default: site.author }}{% endraw %}">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="article">
@@ -181,7 +181,7 @@ cat > _includes/seo-head.html << 'EOF'
   "dateModified": "{{ page.last_modified | default: page.date | date_to_xmlschema }}",
   "author": {
     "@type": "Person",
-    "name": "{{ page.author | default: site.author }}"
+    "name": "{% raw %}{{ page.author | default: site.author }}{% endraw %}"
   }
 }
 </script>
