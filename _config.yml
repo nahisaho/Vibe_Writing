@@ -9,7 +9,7 @@ navigation:
   - title: "目次"
     url: "./index.md"
   - title: "クイックスタート"
-    url: "./quick-start-guide.md"
+    url: "./vibe-writing-startup-guide.md"
   - title: "実践ガイド"
     url: "./chapter-04-six-step-process.md"
   - title: "GitHub連携"
