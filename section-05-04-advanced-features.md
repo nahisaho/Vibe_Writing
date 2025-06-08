@@ -519,11 +519,11 @@ EOF
 
 以下のコードエディタで試してみましょう：
 
-{% include code-executor.html 
+{% raw %}{% include code-executor.html 
    language="javascript" 
    initial_code="console.log('Hello, World!');"
    expected_output="Hello, World!"
-   hints="console.log()関数を使用して文字列を出力してください。" %}
+   hints="console.log()関数を使用して文字列を出力してください。" %}{% endraw %}
 ```
 
 **実装のポイント：**
