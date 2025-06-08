@@ -175,7 +175,7 @@ learning_steps:
 
 # Microsoft 365設定ガイド
 
-{% include learning-progress.html %}
+{% raw %}{% include learning-progress.html %}{% endraw %}
 
 ## はじめに
 [ガイドの内容]

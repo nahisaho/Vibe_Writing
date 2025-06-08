@@ -320,7 +320,7 @@ jobs:
       if: github.ref == 'refs/heads/main'
       uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: {% raw %}"${{ secrets.GITHUB_TOKEN }}"{% endraw %}
         publish_dir: ./_site
 ```
 
@@ -426,11 +426,11 @@ search.addWidgets([
     templates: {
       item: `
         <div class="hit">
-          <h3><a href="{{ url }}">{{{ title }}}</a></h3>
-          <p>{{{ description }}}</p>
+          <h3><a href="{% raw %}{{ url }}{% endraw %}">{% raw %}{{{ title }}}{% endraw %}</a></h3>
+          <p>{% raw %}{{{ description }}}{% endraw %}</p>
           <div class="hit-meta">
-            <span class="hit-category">{{ category }}</span>
-            <span class="hit-date">{{ date }}</span>
+            <span class="hit-category">{% raw %}{{ category }}{% endraw %}</span>
+            <span class="hit-date">{% raw %}{{ date }}{% endraw %}</span>
           </div>
         </div>
       `,
