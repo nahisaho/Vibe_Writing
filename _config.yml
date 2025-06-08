@@ -7,13 +7,13 @@ url: "https://nahisaho.github.io"
 # Navigation
 navigation:
   - title: "目次"
-    url: "/Vibe_Writing/"
+    url: "/"
   - title: "クイックスタート"
-    url: "/Vibe_Writing/vibe-writing-startup-guide"
+    url: "/vibe-writing-startup-guide"
   - title: "実践ガイド"
-    url: "/Vibe_Writing/chapter-04-six-step-process"
+    url: "/chapter-04-six-step-process"
   - title: "GitHub連携"
-    url: "/Vibe_Writing/chapter-05-github-pages-integration"
+    url: "/chapter-05-github-pages-integration"
 
 # Author information
 author:
